@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+data/
+bin/
+*.exe
+coverage.out
+node_modules/
+test-results/
+.DS_Store

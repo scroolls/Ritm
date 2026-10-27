@@ -1,0 +1,7 @@
+{
+  "name": "ritm",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {"test:ui": "node --test tests/ui.test.cjs"},
+  "devDependencies": {"playwright": "1.62.1"}
+}

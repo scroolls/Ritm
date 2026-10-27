@@ -1,0 +1,16 @@
+services:
+  pulse:
+    build: .
+    ports:
+      - "127.0.0.1:8080:8080"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      ADDR: 0.0.0.0:8080
+      DATA_FILE: /data/state.json
+    volumes:
+      - pulse-data:/data
+    restart: unless-stopped
+volumes:
+  pulse-data:
